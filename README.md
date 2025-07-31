@@ -2,8 +2,7 @@
 
 A clean, responsive personal portfolio website built using HTML, CSS, and JavaScript. This site includes sections like Home, About, Skills, Projects, Contact, and Resume.
 
-Live Demo: [D:\portfolio-website\Portfolio]  
-(Replace with actual link after hosting)
+Live Demo: https://firnas-jahabar4.github.io/Portfolio
 
 ---
 
