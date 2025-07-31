@@ -1,0 +1,215 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+  padding-top: 80px;
+}
+
+header {
+  background-color: #222;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo a {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* Section Layout */
+.section-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 60px;
+  gap: 50px;
+}
+
+.section-row.left-image {
+  flex-direction: row;
+}
+
+.section-row.right-image {
+  flex-direction: row-reverse;
+}
+
+.section-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.section-text h1, .section-text h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-text p, .section-text ul {
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 1rem;
+}
+
+.section-text ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.section-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.section-image img {
+  width: 80%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+form button {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: #0097a7;
+}
+
+#form-alert {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Resume Section */
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 15px;
+  color:#fff ;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #0077b5; 
+}
+
+.social-links a i {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .section-row {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 80px 20px;
+  }
+
+  .section-text, .section-image {
+    max-width: 100%;
+  }
+
+  .section-image img {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
